@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 400%;
+  
+}
+
+
+#container {
+  width: 1192px;
+  min-width: 1192px;
+  height: 670px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container #bg-img {
+  position: absolute;
+  z-index: -1;
+  width: 1192px;
+  height: 670px;
+}
+
+#character-img {
+  position: absolute;
+}
+
+#container #bg-img img {
+  width: 100%;
+}
+
+#container #dialog {
+  position: absolute;
+  bottom: 0;
+  margin: 20px 100px;
+}
+
+#dialog-text,
+#character-name,
+#choices {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 22px;
+}
+
+#character-name {
+  display: inline-block;
+  padding: 3px 12px;
+}
+
+#dialog-text {
+  padding: 1em;
+}
+
+#choices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 1em;
+}
+
+#choices a {
+  color: white;
+}
+
+#iframe {
+  position: absolute;
+  z-index: -2;
+  border: none;
+  overflow: hidden;
+  /* margin-top: -3px; */
+}

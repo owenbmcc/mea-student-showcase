@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LETS GET ICE CREAM !</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="container">
+    <audio id="bg-music" src="Audio/Windswept.mp3" loop></audio>
+    <div id="bg-img">
+      <img src="Background Images/TitleScreen1.JPG">
+    </div>
+    <div id="title">
+      <a href="#" id="start-button">LETS GET ICE CREAM !</a>
+    </div>
+    <iframe id="iframe" width="1192" height="670" frameborder="0" scrolling="no" src="Beginning/test.html"></iframe>
+  </div>
+</body>
+
+<script>
+  const startButton = document.getElementById('start-button');
+  const bgMusic = document.getElementById('bg-music');
+  const iFrame = document.getElementById('iframe');
+  const bgImg = document.getElementById('bg-img');
+  const title = document.getElementById('title');
+  bgMusic.volume = 0.25;
+
+  startButton.addEventListener('click', () => {
+    bgMusic.play();
+    bgImg.style.display = 'none';
+    title.style.display = 'none';
+    iframe.style.zIndex = '1';
+  });
+
+</script>
+
+</html>
