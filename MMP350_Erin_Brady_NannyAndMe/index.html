@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./style.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Gaegu|Poppins" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Nanny & Me</title>
+
+    <!--    Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD03P4iOijpHbL-30VWo_r2Q_pnWZrgMsI",
+            authDomain: "nanny-and-me.firebaseapp.com",
+            databaseURL: "https://nanny-and-me.firebaseio.com",
+            projectId: "nanny-and-me",
+            storageBucket: "nanny-and-me.appspot.com",
+            messagingSenderId: "807990200836"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+
+
+
+        <div class="header">
+            <h1 class="logo">Nanny & Me</h1>
+            <nav class="wide">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html">Search</a>
+                    </li>
+                    <li id="profile-nav">
+                        <a id="profile-link" href="user.html">Profile</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="donate.html">Donate</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class="mobile">
+                <ul>
+                    <li>
+                        <a href="index.html"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="dashboard.html"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li id="profile-nav">
+                        <a id="profile-link" href="user.html"><i class="fas fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><i class="far fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="donate.html"><i class="fas fa-hand-holding-usd"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="buttons">
+                <!-- user info -->
+                <div id="user-info">
+                    <div id="display-name"></div>
+                    <button id="logout">Log Out</button>
+                </div>
+                <!-- login -->
+                <a href="login.html"><button id="login">Login</button></a>
+
+                <!-- sign up -->
+                <a href="signup.html"><button id="signup">Sign Up</button></a>
+
+            </div>
+        </div>
+
+
+
+        <h2 class="subhead" id="1">Helping NYC families find affordable Child Care in their own communities.</h2>
+        <img src="images/play-banner.jpg" class="mother">
+
+        <h2 class="subtitle">Mission Statement</h2>
+        <p class="mission">Every parent and child deserves great child care -- regardless of their neighborhood or income. <i>Nanny &amp; Me</i> is a place to find and book local nannies so families can find the perfect fit.</p>
+        <p class="mission-author"><i>-Nanny &amp; Me</i></p>
+
+        <!-- statistics section -->
+        <div class="stats-block">
+            <h3 class="subhead" id="2">Reliable Child Care is Good for your Family, Community, and the Economy.</h3>
+            <div class="block1">
+                <h4 class="stat">$3 Billion</h4>
+                <p>What U.S. businesses lose annually due to employee absenteeism as the result of child care breakdowns.</p>
+            </div>
+
+            <div class="block2">
+                <h4 class="stat">29%</h4>
+                <p>of employed parents have reported tardiness, absence, or reduced concentration at work due to childcare-related issues.</p>
+            </div>
+
+            <div class="block3">
+                <h4 class="stat">23.5 Million</h4>
+                <p>Number of U.S. children in low-income working families.</p>
+            </div>
+
+            <div class="block4">
+                <h4 class="stat">$15.25</h4>
+                <p>The additional income parents receive for every dollar invested in formal child care.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="signup.html" class="pag">Sign Up</a>
+        <a href="dashboard.html" class="pag">Search</a>
+        <a href="#" class="pag">Manage My Account</a>
+
+        <a href="login.html" class="pag">Log In</a>
+        <a href="donate.html" class="pag">Make a Donation</a>
+        <a href="contact.html" class="pag">Contact Us</a>
+        <div id="social-links1">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-google-plus"></i>
+        </div>
+        <div class="small-links">
+            <a href="#" class="small">Copyright</a>
+            <a href="#" class="small">Privacy Statement</a>
+            <a href="#" class="small">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
