@@ -1,0 +1,90 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    background-color: #b8b8b8;
+    margin: 0;
+    padding: 0;
+}
+
+/*NAVIGATION*/
+
+header {
+    width: 100%;
+}
+
+header {
+    font-size: 20px;
+    font-family: "times";
+}
+
+header nav ul {
+    display: block;
+    margin: 30px 20px;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 15px;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+.title {
+    padding: 230px 0 0 40px;
+    font-family: monospace;
+    color: white;
+}
+
+.netero {
+    float: right;
+    display: block;
+    margin: 100px;
+}
+
+.content {
+    padding-left: 40px;
+    font-family: monospace;
+    color: aliceblue;
+}
+
+/*SELF PORTRAIT*/
+
+.container {
+    font-size: 20px;
+    font-family: "aniuk";
+}
+
+.container nav ul {
+    display: block;
+    margin: 30px 20px;
+    width: fit-content;
+}
+
+.container nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 15px;
+}
+
+.container nav ul li a {
+    color: black;
+} 
+
+.info {
+    font-family: monospace;
+    width: 500px;
+    float: left;
+    margin: 10px;
+    display:block;
+    text-align: center;
+}
+
+
